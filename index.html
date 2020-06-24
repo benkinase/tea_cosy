@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cosytea</title>
+    <link rel="icon" href="/images/favicon.ico" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA="
+      crossorigin="anonymous"
+    />
+
+    <!---Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./logo.svg" class="logo" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#featured-tea" class="scroll-link">Featured Tea</a>
+              </li>
+              <li>
+                <a href="#locations" class="scroll-link">Locations</a>
+              </li>
+              <li>
+                <a href="#contact" class="scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner -->
+      <section class="banner">
+        <div class="holder">
+          <h2>Our Mission</h2>
+          <p>
+            Handpicked, Artisantly Curated, Free Range, Sustainable, Small
+            Batch, Fair Trade, Organic Tea
+          </p>
+          <a href="#featured-tea" class="scroll-link button button-white"
+            >explore more</a
+          >
+        </div>
+      </section>
+    </header>
+    <!-- featured tea -->
+    <section id="featured-tea" class="section">
+      <div class="title mt-4">
+        <h2>Featured<span> Tea</span></h2>
+      </div>
+      <h2>Tea of the Month</h2>
+      <h4 class="">What's Steeping at The Tea Cosy?</h4>
+
+      <div class="d-row">
+        <div class="item">
+          <img
+            src="images/img-berryblitz.jpg"
+            alt="Berry Blitz"
+            class="img-responsive"
+          />
+          <h4 class="text-center mt-3">Fall Berry Blitz Tea</h4>
+        </div>
+
+        <div class="item">
+          <img
+            src="images/img-spiced-rum.jpg"
+            alt="Rum Tea"
+            class="img-responsive"
+          />
+          <h4 class="text-center mt-3">Spiced Rum Tea</h4>
+        </div>
+
+        <div id="item3" class="item">
+          <img src="images/img-donut.jpg" alt="Donut" class="img-responsive" />
+          <h4 class="text-center mt-3">Seasonal Donuts</h4>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="d-row1">
+          <div id="item4" class="item">
+            <img
+              src="images/img-myrtle-ave.jpg"
+              alt="Ave Tea"
+              class="img-responsive"
+            />
+            <h4 class="text-center mt-3">Myrtle Ave Tea</h4>
+          </div>
+
+          <div id="item5" class="item">
+            <img
+              src="images/img-bedford-bizarre.jpg"
+              alt="Bedford-Bizarre"
+              class="img-responsive"
+            />
+            <h4 class="text-center mt-3">Bedford-Bizarre Tea</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured tea ends -->
+    <!-- location starts -->
+    <section id="locations" class="section">
+      <div class="title py-4">
+        <h2>our <span>Locations</span></h2>
+      </div>
+
+      <div class="location-container">
+        <div class="location">
+          <h2>Downtown</h2>
+          <p>384 West 4th St Suite 108 Portland, Dortmund</p>
+        </div>
+        <div class="location">
+          <h2>East Bayside</h2>
+          <p>
+            3433 Phisherman's Avenue (Northwest Corner)
+            <span class="">Portland, Maine</span>
+          </p>
+        </div>
+
+        <div class="location">
+          <h2>Oakdale</h2>
+          <p>Besterteastraße 23, Bonn</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- location ends-->
+    <!-- contact starts -->
+    <section id="contact" class="section">
+      <div class="title mt-4">
+        <h2><span>con</span>tact</h2>
+      </div>
+      <div class="contact-container">
+        <div class="mt-5 shadow px-2 py-2">
+          <h2>The Tea Cosy</h2>
+          <h5>contact@theteacosy.com</h5>
+          <p>917-555-8904</p>
+        </div>
+
+        <form class="mt-5">
+          <h3>
+            Get in touch
+          </h3>
+          <div class="form-group row">
+            <div class="col-lg-6">
+              <input
+                type="text"
+                name="fname"
+                class="form-control"
+                placeholder="First name"
+                required
+              />
+            </div>
+            <div class="col-lg-6">
+              <input
+                type="text"
+                name="lname"
+                class="form-control"
+                placeholder="Last name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <div class="col-lg-6">
+              <input
+                type="text"
+                name="email"
+                class="form-control"
+                placeholder="Email address"
+                required
+              />
+            </div>
+            <div class="col-lg-6">
+              <input
+                type="text"
+                name="phone"
+                class="form-control"
+                placeholder="Phone number"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea name="enquiry" class="form-control" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn">
+              Send Enquiry
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- contact ends -->
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+      <div class="">
+        <div>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.twitter.com">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.sketch.com">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.bahance.com">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com">
+                <i class="fab fa-skype"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.figma.com">
+                <i class="fab fa-figma"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>
+          copyright &copy; teaCosy inc.
+          <span id="date"></span>
+        </p>
+
+        <a class="scroll-link top-link" href="#home">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
