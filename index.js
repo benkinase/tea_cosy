@@ -33,8 +33,6 @@ window.addEventListener("scroll", function () {
   // setup back to top link
 
   if (scrollHeight > 500) {
-    console.log("helo");
-
     topLink.classList.add("show-link");
   } else {
     topLink.classList.remove("show-link");
@@ -45,8 +43,8 @@ window.addEventListener("scroll", function () {
 // select links
 const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
     // navigate to specific spot
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
