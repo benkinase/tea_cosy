@@ -207,6 +207,7 @@ nav {
   width: 100%;
   background: var(--clr-white);
   box-shadow: var(--light-shadow);
+  z-index: 999;
 }
 .fixed-nav .links a {
   color: var(--clr-grey-1);
@@ -223,7 +224,7 @@ nav {
   justify-content: space-between;
 }
 .nav-toggle {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--clr-grey-1);
   background: transparent;
   border-color: transparent;
@@ -391,6 +392,11 @@ img:not(.logo) {
   text-align: center;
   width: 300px;
   height: 25vh;
+  transition: var(--transition);
+}
+
+.location:hover {
+  transform: scale(1.2);
 }
 
 .location p {
@@ -474,11 +480,7 @@ footer p {
     flex-direction: column;
     align-items: center;
   }
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-  }
-
+  .contact-container,
   .d-row,
   .d-row1 {
     display: flex;
