@@ -13,7 +13,7 @@ Variables
 
 :root {
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-1: hsl(204, 87%, 6%);
   --clr-primary-2: hsl(205, 77%, 27%);
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
@@ -168,6 +168,7 @@ p {
 .button:hover {
   background: var(--clr-white);
   color: var(--clr-secondary);
+  text-decoration: none;
 }
 /* section */
 .section {
@@ -190,9 +191,9 @@ main {
   place-items: center;
 }
 /*
-=============== 
+================================================================================
 Scroll
-===============
+================================================================================
 */
 /* navbar */
 nav {
@@ -211,9 +212,11 @@ nav {
 }
 .fixed-nav .links a {
   color: var(--clr-grey-1);
+  transition: var(--transition);
 }
 .fixed-nav .links a:hover {
   color: var(--clr-secondary);
+  padding-left: 1rem;
 }
 /* .fixed-nav .links-container {
   height: auto !important;
@@ -305,7 +308,7 @@ nav {
 /* hero */
 header {
   min-height: 100vh;
-  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(154, 207, 209, 0.3), rgba(0, 0, 0, 0.7)),
     url(./images/jumbo-bg.jpg) center/cover no-repeat;
 }
 
@@ -326,6 +329,7 @@ header {
   max-width: 25rem;
   margin: 0 auto;
   margin-bottom: 1.25rem;
+  padding: 0.4rem;
 }
 @media screen and (min-width: 768px) {
   .holder p {
@@ -387,7 +391,7 @@ img:not(.logo) {
 .location {
   box-shadow: 2px 2px 10px var(--clr-grey-1);
   background: var(--clr-secondary);
-  opacity: 0.6;
+  opacity: 0.5;
   padding: 1.5rem;
   text-align: center;
   width: 300px;
@@ -396,7 +400,7 @@ img:not(.logo) {
 }
 
 .location:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .location p {
@@ -427,7 +431,12 @@ img:not(.logo) {
 .social-icons li {
   padding: 0.5rem;
   font-size: 1.5rem;
+  transition: var(--transition);
 }
+.social-icons li:hover {
+  transform: scale(1.5);
+}
+
 footer {
   background: var(--clr-primary-1);
   padding: 5rem 1rem;
