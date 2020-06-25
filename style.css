@@ -216,7 +216,7 @@ nav {
 }
 .fixed-nav .links a:hover {
   color: var(--clr-secondary);
-  padding-left: 1rem;
+  padding-left: 2rem;
 }
 /* .fixed-nav .links-container {
   height: auto !important;
@@ -239,7 +239,7 @@ nav {
 }
 .logo {
   height: 55px;
-  animation: grow-shrink 2s linear 2;
+  animation: grow-shrink 2s linear 3;
 }
 
 .links-container {
@@ -252,7 +252,7 @@ nav {
 }
 .links a {
   background: var(--clr-white);
-  color: var(--clr-grey-5);
+  color: var(--clr-grey-4);
   font-size: 1.1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -405,6 +405,7 @@ img:not(.logo) {
 
 .location p {
   color: var(--clr-white);
+  opacity: 1;
 }
 
 /*contact*/
@@ -454,7 +455,7 @@ footer p {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  background: var(--clr-secondary_1);
+  background: var(--clr-secondary);
   width: 2rem;
   height: 2rem;
   display: grid;
@@ -464,6 +465,7 @@ footer p {
   animation: grow-shrink 2s ease-in-out infinite;
   visibility: hidden;
   z-index: -100;
+  transition: var(--transition);
 }
 .show-link {
   visibility: visible;
