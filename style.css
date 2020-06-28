@@ -233,6 +233,7 @@ nav {
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  outline: none;
 }
 .nav-toggle:hover {
   color: var(--clr-secondary);
@@ -390,8 +391,9 @@ img:not(.logo) {
 
 .location {
   box-shadow: 2px 2px 10px var(--clr-grey-1);
-  background: var(--clr-secondary);
-  opacity: 0.5;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  opacity: 0.9;
   padding: 1.5rem;
   text-align: center;
   width: 300px;
@@ -404,7 +406,7 @@ img:not(.logo) {
 }
 
 .location p {
-  color: var(--clr-white);
+  color: var(--clr-primary-2);
   opacity: 1;
 }
 
